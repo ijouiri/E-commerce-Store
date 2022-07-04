@@ -6,7 +6,6 @@ import ItemContainer from "../../components/items-container/items-container.comp
 const HomePage = () => (
   <div className='homepage'>
     <ItemContainer />
-
   </div>
 
 )
