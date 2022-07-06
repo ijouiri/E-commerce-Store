@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import HomePage from "./pages/homepage/homepage.component"
 import ErrorPage from "./pages/ErrorPage/ErrorPage.component"
 import NavigationBar from "./pages/navigationbar/navigationbar.comonenet"
+import SignIn from "./pages/sign-In/sign-In.componenet"
 
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
@@ -24,6 +25,7 @@ class App extends Component {
         <Routes>
           <Route index element={<HomePage />} />
           <Route path='/hats' element={<HatsPage />} />
+          <Route path="/Sign-In" element={<SignIn />} />
           <Route path='*' element={<ErrorPage />} />
         </Routes>
       </BrowserRouter>
@@ -31,13 +33,4 @@ class App extends Component {
   }
 }
 
-// class App extends Component {
-//   render() {
-//     return (
-//       <Routes>
-//         <Route path='/' component={HomePage} />
-//       </Routes>
-//     );
-//   }
-// }
 export default App;

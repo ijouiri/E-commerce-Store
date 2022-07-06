@@ -1,11 +1,6 @@
-import { Component, PropTypes } from 'react'
+import { Component } from 'react'
 
 class ErrorPage extends Component {
-  constructor(props) {
-    super(props)
-
-  }
-
   render() {
     return (
       <div>
